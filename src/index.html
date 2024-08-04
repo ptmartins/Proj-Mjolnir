@@ -1,0 +1,66 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial
+  scale=1.0">
+    <title>Project Mjolnir</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <h1 class="appTitle"> Project Mjolnir </h1>
+
+      <!-- Section - Button component -->
+      <section class="section section--buttons">
+        <h2 class="section__title"> Buttons </h2>
+        <div class="section__components">
+          <iw-button>Simple button</iw-button>
+          <iw-button type="main">Main button</iw-button>
+          <iw-button type="kill">Kill button</iw-button>
+        </div>
+      </section>
+
+      <!-- Section - Date component -->
+      <section class="section section--date">
+        <h2 class="section__title"> Date </h2>
+        <div class="section__components">
+          <iw-date label="Created:"></iw-date>
+          <span>or</span>
+          <iw-date></iw-date>
+        </div>
+      </section>
+
+      <!-- Section - Context menu component -->
+      <section class="section section--contextMenu">
+        <h2 class="section__title"> Context Menu </h2>
+        <div class="section__components">
+          <iw-context-menu></iw-context-menu>
+        </div>
+      </section>
+
+      <!-- Section - ListeItem component -->
+      <section class="section section--listItems">
+        <h2 class="section__title"> List items </h2>
+        <div class="section__components">
+          <iw-list-item>
+            <h2 slot="title">Lorem ipsum</h2>
+            <span slot="owner">PMs</span>
+          </iw-list-item>
+        </div>
+      </section>
+    </div>
+
+    <!-- JS scripts -->
+    <script src="iw-components/index.js" type="module"></script>
+    <script>
+      let dateEls = document.querySelectorAll('iw-date'),
+          date = new Date().toLocaleDateString();
+
+      dateEls.forEach(el => el.setAttribute('date', date));
+    </script>
+  </body>
+</html>

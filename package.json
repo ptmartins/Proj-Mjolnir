@@ -1,0 +1,19 @@
+{
+  "name": "project_mjolnir",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build"
+  },
+  "author": "Pedro Martins",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "parcel": "latest",
+    "parcel-bundler": "^1.12.5"
+  }
+}

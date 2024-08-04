@@ -1,0 +1,90 @@
+:root {
+
+    /* Neutral scale */
+    --black:    #000;
+    --grey-50:  #F3F3F3;
+    --grey-100: #e0e0e0;
+    --grey-200: #c6c6c6;
+    --grey-300: #a8a8a8;
+    --grey-400: #8d8d8d;
+    --grey-500: #6f6f6f;
+    --grey-600: #525252;
+    --grey-700: #363636;
+    --grey-800: #232323;
+    --grey-900: #131313;
+    --white:    #fff;
+
+    /* Accent color */
+    --accent-50:  #64B5F6;
+    --accent-100: #BBDEFB;
+    --accent-220: #90CAF9;
+    --accent-300: #64B5F6;
+    --accent-400: #42A5F5;
+    --accent-500: #2196F3;
+    --accent-600: #1E88E5;
+    --accent-700: #1976D2;
+    --accent-800: #1565C0;
+    --accent-900: #0D47A1;
+
+    /* Green Scale */
+    --green-50:  #F1F8E9;
+    --green-100: #DCEDC8;
+    --green-200: #C5E1A5;
+    --green-300: #AED581;
+    --green-400: #9CCC65;
+    --green-500: #8BC34A;
+    --green-600: #7CB342;
+    --green-700: #689F38;
+    --green-800: #558B2F;
+    --green-900: #33691E;
+
+    /* Yellow Scale */
+    --yellow-50:  #FFFDE7;
+    --yellow-100: #FFF9C4;
+    --yellow-200: #FFF59D;
+    --yellow-300: #FFF176;
+    --yellow-400: #FFEE58;
+    --yellow-500: #FFEB3B;
+    --yellow-600: #FDD835;
+    --yellow-700: #FBC02D;
+    --yellow-800: #F9A825;
+    --yellow-900: #F57F17;
+
+    /* Amber Scale */
+    --amber-50:  #FFF8E1;
+    --amber-100: #FFECB3;
+    --amber-200: #FFE082;
+    --amber-300: #FFD54F;
+    --amber-400: #FFCA28;
+    --amber-500: #FFC107;
+    --amber-600: #FFB300;
+    --amber-700: #FFA000;
+    --amber-800: #FF8F00;
+    --amber-900: #FF6F00;
+
+    /* Red Scale */
+    --red-50:  #FDECEC;
+    --red-100: #FAC5C3;
+    --red-200: #F7A9A7;
+    --red-300: #F4827E;
+    --red-400: #F16965;
+    --red-500: #F44336;
+    --red-600: #D93E39;
+    --red-700: #A9302D;
+    --red-800: #832523;
+    --red-900: #641D1A;
+
+    /* Sematic colors */
+    --danger: var(--red-500);
+    --alert: var(--amber-500);
+    --warning: var(--yellow-500);
+    --success: var(--green-500);
+
+    /* Radius */
+    --radius-sm: 2px;
+    --radius:    4px;
+    --radius-lg: 8px;
+    --radius-xl: 16px;
+
+    --default-transition: all .2s ease-in;
+}
