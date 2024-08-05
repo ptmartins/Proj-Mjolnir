@@ -44,18 +44,22 @@ class ListItem extends BaseComponent {
                 justify-self: center;
             }
 
-            @media screen and (width >= 640px) {
+            @media (min-width: 640px) {
             
             }
 
-            @media screen and (width >= 768px) {
+            @media (min-width: 768px) {
             
             }
 
-            @media all and (min-width: 1024px) {
-                grid-template-columns: 1fr minmax(150px, max-content) minmax(50px, min-content) 40px;
+            @media (min-width: 1024px) {
+
+                body {
+                    color: red;
+                }
 
                 .listItem {
+                    grid-template-columns: 1fr minmax(150px, max-content) minmax(50px, min-content) 40px; 
                     grid-template-rows: 1fr;
                 }
 
