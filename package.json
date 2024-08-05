@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "npx parcel src/index.html",
-    "build": "parcel build"
+    "build": "npx parcel build src/index.html"
   },
   "author": "Pedro Martins",
   "license": "ISC",

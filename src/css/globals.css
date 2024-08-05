@@ -74,17 +74,17 @@
     --red-800: #832523;
     --red-900: #641D1A;
 
-    /* Sematic colors */
-    --danger: var(--red-500);
-    --alert: var(--amber-500);
+    /* Semantic colors */
+    --danger:  var(--red-500);
+    --alert:   var(--amber-500);
     --warning: var(--yellow-500);
     --success: var(--green-500);
 
     /* Radius */
-    --radius-sm: 2px;
-    --radius:    4px;
-    --radius-lg: 8px;
-    --radius-xl: 16px;
+    --radius-s:  2px;
+    --radius-m:  4px;
+    --radius-l:  8px;
+    --radius-xl: 12px;
 
     --default-transition: all .2s ease-in;
 }

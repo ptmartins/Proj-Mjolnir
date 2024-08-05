@@ -32,11 +32,14 @@ class Button extends BaseComponent {
     this.applyStyles(`
 
       .btn {
+        align-items: center;
         background-color: var(--grey-200);
         border: none;
         border-radius: var(--radius);
         cursor: pointer;
+        display: flex;
         font-size: 16px;
+        gap: .375rem;
         padding: .75rem 1rem;
         transition: var(--default-transition);
 
