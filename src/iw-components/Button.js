@@ -33,7 +33,7 @@ class Button extends BaseComponent {
 
       .btn {
         align-items: center;
-        background-color: var(--grey-200);
+        background-color: var(--neutral-200);
         border: none;
         border-radius: var(--radius);
         cursor: pointer;
@@ -44,7 +44,7 @@ class Button extends BaseComponent {
         transition: var(--default-transition);
 
         &:hover {
-          background-color: var(--grey-300);
+          background-color: var(--neutral-300);
         }
       
         &.btn--main {

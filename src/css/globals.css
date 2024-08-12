@@ -1,18 +1,19 @@
 :root {
 
     /* Neutral scale */
-    --black:    #000;
-    --grey-50:  #F3F3F3;
-    --grey-100: #e0e0e0;
-    --grey-200: #c6c6c6;
-    --grey-300: #a8a8a8;
-    --grey-400: #8d8d8d;
-    --grey-500: #6f6f6f;
-    --grey-600: #525252;
-    --grey-700: #363636;
-    --grey-800: #232323;
-    --grey-900: #131313;
-    --white:    #fff;
+    --white:       #fff;
+    --neutral-50:  #FDFDFD;
+    --neutral-75:  #F3F3F3;
+    --neutral-100: #e0e0e0;
+    --neutral-200: #c6c6c6;
+    --neutral-300: #a8a8a8;
+    --neutral-400: #8d8d8d;
+    --neutral-500: #6f6f6f;
+    --neutral-600: #525252;
+    --neutral-700: #363636;
+    --neutral-800: #232323;
+    --neutral-900: #131313;
+    --black:       #000;
 
     /* Accent color */
     --accent-50:  #64B5F6;
@@ -89,19 +90,19 @@
     --default-transition: all .2s ease-in;
 
     --bg: var(--white);
-    --font: var(--grey-900);
-    --overlay: var(--grey-100);
+    --font: var(--neutral-900);
+    --overlay: var(--neutral-100);
     --primary-accent: var(--accent-500);
 }
 
 html[data-theme="neutral"] {
-    --bg: var(--grey-100);
-    --font: var(--grey-900);
+    --bg: var(--neutral-100);
+    --font: var(--neutral-900);
     --overlay: var(--white);
 }
 
 html[data-theme="dark"] {
-    --bg: var(--grey-800);
+    --bg: var(--neutral-800);
     --font: var(--white);
-    --overlay: var(--grey-700);
+    --overlay: var(--neutral-700);
 }
