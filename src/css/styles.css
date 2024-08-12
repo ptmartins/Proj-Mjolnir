@@ -28,6 +28,11 @@ body {
     &:hover {
         background-color: var(--grey-200);
     }
+
+    &.active {
+        background-color: var(--primary-accent);
+        color: var(--white);
+    }
 }
 
 .app {

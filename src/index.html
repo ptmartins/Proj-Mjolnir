@@ -15,7 +15,7 @@
       <header class="header">
         <h1 class="appTitle"> Project Mjolnir </h1>
         <div class="actions">
-          <button class="btn btn--theme" data-theme="light">Light</button>
+          <button class="btn btn--theme active" data-theme="light">Light</button>
           <button class="btn btn--theme" data-theme="neutral">Neutral</button>
           <button class="btn btn--theme" data-theme="dark">Dark</button>
         </div>
@@ -69,38 +69,6 @@
 
     <!-- JS scripts -->
     <script src="iw-components/index.js" type="module"></script>
-    <script>
-
-      let DOM = {},
-          date = new Date().toLocaleDateString();
-
-      let cacheDOM = () => {
-        DOM.root = document.documentElement;
-        DOM.themes = document.querySelectorAll('.btn--theme');
-        DOM.dateEls = document.querySelectorAll('iw-date');
-      };
-
-      const switchTheme = ev => {
-        let theme = ev.target.getAttribute('data-theme');
-
-        if(DOM.root.getAttribute('data-theme') !== theme) {
-          DOM.root.setAttribute('data-theme', theme);
-        } else {
-          return;
-        }
-      }
-
-      let handleEvents = () => {
-        DOM.themes.forEach(btn => btn.addEventListener('click', switchTheme));
-      }
-
-      let init = () => {
-        cacheDOM();
-        DOM.dateEls.forEach(el => el.setAttribute('date', date));
-        handleEvents();
-      }
-
-      window.addEventListener('DOMContentLoaded', init);
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
