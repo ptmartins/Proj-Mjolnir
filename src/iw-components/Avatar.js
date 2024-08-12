@@ -14,7 +14,7 @@ class Avatar extends BaseComponent {
 
         this.applyStyles(`
             .avatar {
-                background-color: var(--grey-800);
+                background-color: var(--primary-accent);
                 border-radius: var(--radius-m);
                 color: var(--white);
                 padding: .375rem;

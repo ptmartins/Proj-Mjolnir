@@ -11,7 +11,8 @@ class ListItem extends BaseComponent {
         this.applyStyles(`
 
             .listItem {
-                border: 1px solid var(--grey-100);
+                background-color: var(--overlay);
+                border: 1px solid var(--overlay);
                 border-radius: var(--radius-m);
                 display: grid;
                 gap: .75rem;

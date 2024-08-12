@@ -1,6 +1,6 @@
 <!-- src/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial
@@ -12,7 +12,14 @@
   </head>
   <body>
     <div id="app" class="app">
-      <h1 class="appTitle"> Project Mjolnir </h1>
+      <header class="header">
+        <h1 class="appTitle"> Project Mjolnir </h1>
+        <div class="actions">
+          <button class="btn btn--theme" data-theme="light">Light</button>
+          <button class="btn btn--theme" data-theme="neutral">Neutral</button>
+          <button class="btn btn--theme" data-theme="dark">Dark</button>
+        </div>
+      </header>
 
       <!-- Section - Button component -->
       <section class="section section--buttons">
@@ -63,10 +70,37 @@
     <!-- JS scripts -->
     <script src="iw-components/index.js" type="module"></script>
     <script>
-      let dateEls = document.querySelectorAll('iw-date'),
+
+      let DOM = {},
           date = new Date().toLocaleDateString();
 
-      dateEls.forEach(el => el.setAttribute('date', date));
+      let cacheDOM = () => {
+        DOM.root = document.documentElement;
+        DOM.themes = document.querySelectorAll('.btn--theme');
+        DOM.dateEls = document.querySelectorAll('iw-date');
+      };
+
+      const switchTheme = ev => {
+        let theme = ev.target.getAttribute('data-theme');
+
+        if(DOM.root.getAttribute('data-theme') !== theme) {
+          DOM.root.setAttribute('data-theme', theme);
+        } else {
+          return;
+        }
+      }
+
+      let handleEvents = () => {
+        DOM.themes.forEach(btn => btn.addEventListener('click', switchTheme));
+      }
+
+      let init = () => {
+        cacheDOM();
+        DOM.dateEls.forEach(el => el.setAttribute('date', date));
+        handleEvents();
+      }
+
+      window.addEventListener('DOMContentLoaded', init);
     </script>
   </body>
 </html>
