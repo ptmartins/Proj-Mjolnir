@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "scripts": {
     "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html"
+    "build": "npx parcel build src/index.html",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "Pedro Martins",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@storybook/web-components": "^8.2.9",
+    "@storybook/web-components-webpack5": "^8.2.9",
     "@types/node": "^20.14.2",
+    "lit": "^3.2.0",
+    "storybook": "^8.2.9",
     "typescript": "^5.4.5"
   },
   "dependencies": {
