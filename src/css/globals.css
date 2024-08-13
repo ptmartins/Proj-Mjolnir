@@ -1,79 +1,79 @@
 :root {
 
     /* Neutral scale */
-    --white:       #fff;
-    --neutral-50:  #FDFDFD;
-    --neutral-75:  #F3F3F3;
-    --neutral-100: #e0e0e0;
-    --neutral-200: #c6c6c6;
-    --neutral-300: #a8a8a8;
-    --neutral-400: #8d8d8d;
-    --neutral-500: #6f6f6f;
-    --neutral-600: #525252;
-    --neutral-700: #363636;
-    --neutral-800: #232323;
-    --neutral-900: #131313;
-    --black:       #000;
+    --white:       hsl(0, 0%, 100%);
+    --neutral-50:  hsl(0, 0%, 99%);
+    --neutral-75:  hsl(0, 0%, 95%);
+    --neutral-100: hsl(0, 0%, 88%);
+    --neutral-200: hsl(0, 0%, 78%);
+    --neutral-300: hsl(0, 0%, 66%);
+    --neutral-400: hsl(0, 0%, 55%);
+    --neutral-500: hsl(0, 0%, 44%);
+    --neutral-600: hsl(0, 0%, 32%);
+    --neutral-700: hsl(0, 0%, 21%);
+    --neutral-800: hsl(0, 0%, 14%);
+    --neutral-900: hsl(0, 0%, 7%);
+    --black:       hsl(0, 0%, 0%);
 
     /* Accent color */
-    --accent-50:  #64B5F6;
-    --accent-100: #BBDEFB;
-    --accent-220: #90CAF9;
-    --accent-300: #64B5F6;
-    --accent-400: #42A5F5;
-    --accent-500: #2196F3;
-    --accent-600: #1E88E5;
-    --accent-700: #1976D2;
-    --accent-800: #1565C0;
-    --accent-900: #0D47A1;
+    --accent-50:  hsl(206, 100%, 95%);
+    --accent-100: hsl(207, 89%, 86%);
+    --accent-220: hsl(207, 90%, 77%);
+    --accent-300: hsl(207, 89%, 68%);
+    --accent-400: hsl(207, 90%, 61%);
+    --accent-500: hsl(207, 90%, 54%);
+    --accent-600: hsl(208, 79%, 51%);
+    --accent-700: hsl(210, 79%, 46%);
+    --accent-800: hsl(212, 80%, 42%);
+    --accent-900: hsl(216, 85%, 34%);
 
     /* Green Scale */
-    --green-50:  #F1F8E9;
-    --green-100: #DCEDC8;
-    --green-200: #C5E1A5;
-    --green-300: #AED581;
-    --green-400: #9CCC65;
-    --green-500: #8BC34A;
-    --green-600: #7CB342;
-    --green-700: #689F38;
-    --green-800: #558B2F;
-    --green-900: #33691E;
+    --green-50:  hsl(88, 52%, 94%);
+    --green-100: hsl(88, 51%, 86%);
+    --green-200: hsl(88, 50%, 76%);
+    --green-300: hsl(88, 50%, 67%);
+    --green-400: hsl(88, 50%, 60%);
+    --green-500: hsl(88, 50%, 53%);
+    --green-600: hsl(89, 46%, 48%);
+    --green-700: hsl(92, 48%, 42%);
+    --green-800: hsl(95, 49%, 36%);
+    --green-900: hsl(103, 56%, 26%);
 
     /* Yellow Scale */
-    --yellow-50:  #FFFDE7;
-    --yellow-100: #FFF9C4;
-    --yellow-200: #FFF59D;
-    --yellow-300: #FFF176;
-    --yellow-400: #FFEE58;
-    --yellow-500: #FFEB3B;
-    --yellow-600: #FDD835;
-    --yellow-700: #FBC02D;
-    --yellow-800: #F9A825;
-    --yellow-900: #F57F17;
+    --yellow-50:  hsl(55, 100%, 95%);
+    --yellow-100: hsl(54, 100%, 88%);
+    --yellow-200: hsl(54, 100%, 81%);
+    --yellow-300: hsl(54, 100%, 73%);
+    --yellow-400: hsl(54, 100%, 67%);
+    --yellow-500: hsl(54, 100%, 62%);
+    --yellow-600: hsl(49, 98%, 60%);
+    --yellow-700: hsl(43, 96%, 58%);
+    --yellow-800: hsl(37, 95%, 56%);
+    --yellow-900: hsl(28, 92%, 53%);
 
     /* Amber Scale */
-    --amber-50:  #FFF8E1;
-    --amber-100: #FFECB3;
-    --amber-200: #FFE082;
-    --amber-300: #FFD54F;
-    --amber-400: #FFCA28;
-    --amber-500: #FFC107;
-    --amber-600: #FFB300;
-    --amber-700: #FFA000;
-    --amber-800: #FF8F00;
-    --amber-900: #FF6F00;
+    --amber-50:  hsl(46, 100%, 94%);
+    --amber-100: hsl(45, 100%, 85%);
+    --amber-200: hsl(45, 100%, 75%);
+    --amber-300: hsl(46, 100%, 65%);
+    --amber-400: hsl(45, 100%, 58%);
+    --amber-500: hsl(45, 100%, 51%);
+    --amber-600: hsl(42, 100%, 50%);
+    --amber-700: hsl(38, 100%, 50%);
+    --amber-800: hsl(34, 100%, 50%);
+    --amber-900: hsl(26, 100%, 50%);
 
     /* Red Scale */
-    --red-50:  #FDECEC;
-    --red-100: #FAC5C3;
-    --red-200: #F7A9A7;
-    --red-300: #F4827E;
-    --red-400: #F16965;
-    --red-500: #F44336;
-    --red-600: #D93E39;
-    --red-700: #A9302D;
-    --red-800: #832523;
-    --red-900: #641D1A;
+    --red-50:  hsl(0, 81%, 96%);
+    --red-100: hsl(2, 85%, 87%);
+    --red-200: hsl(1, 83%, 81%);
+    --red-300: hsl(2, 84%, 73%);
+    --red-400: hsl(2, 83%, 67%);
+    --red-500: hsl(4, 90%, 58%);
+    --red-600: hsl(2, 68%, 54%);
+    --red-700: hsl(1, 58%, 42%);
+    --red-800: hsl(1, 58%, 33%);
+    --red-900: hsl(2, 59%, 25%);
 
     /* Semantic colors */
     --danger:  var(--red-500);
@@ -89,20 +89,26 @@
 
     --default-transition: all .2s ease-in;
 
-    --bg: var(--white);
-    --font: var(--neutral-900);
-    --overlay: var(--neutral-100);
-    --primary-accent: var(--accent-500);
+
+    color-scheme: light dark;
+
+    --bg: light-dark(var(--white), var(--neutral-800));
+    --font: light-dark(var(--neutral-900), var(--white));
+    --overlay: light-dark(var(--neutral-100), var(--neutral-700));
+    --primary-accent: light-dark(var(--accent-500), var(--yellow-700));
+    --primary-accent-contrast: light-dark(var(--white), var(--neutral-800));
+}
+
+html[data-theme="light"],
+html[data-theme="neutral"] {
+    color-scheme: light;
 }
 
 html[data-theme="neutral"] {
     --bg: var(--neutral-100);
-    --font: var(--neutral-900);
     --overlay: var(--white);
 }
 
 html[data-theme="dark"] {
-    --bg: var(--neutral-800);
-    --font: var(--white);
-    --overlay: var(--neutral-700);
+    color-scheme: dark;
 }

@@ -16,7 +16,8 @@ class Avatar extends BaseComponent {
             .avatar {
                 background-color: var(--primary-accent);
                 border-radius: var(--radius-m);
-                color: var(--white);
+                color: var(--primary-accent-contrast);
+                font-weight: 700;
                 padding: .375rem;
             }
         `);
