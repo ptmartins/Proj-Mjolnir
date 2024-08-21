@@ -1,6 +1,6 @@
 import BaseComponent from './BaseComponent';
 
-class Button extends BaseComponent {
+class IW_Button extends BaseComponent {
 
   constructor() {
     super();
@@ -12,7 +12,7 @@ class Button extends BaseComponent {
   }
 
   getClassNames() {
-    if(this.hasAttribute('type')) {
+    if(this.hasAttribute('type') && this.getAttribute('type').length > 0) {
       switch(this.getAttribute('type')) {
         case 'main':
           this.classNames.push('btn--main');
@@ -35,7 +35,7 @@ class Button extends BaseComponent {
         align-items: center;
         background-color: var(--neutral-200);
         border: none;
-        border-radius: var(--radius);
+        border-radius: var(--btn-radius);
         cursor: pointer;
         display: flex;
         font-size: 16px;
@@ -76,6 +76,6 @@ class Button extends BaseComponent {
   }
 }
 
-customElements.define('iw-button', Button);
+customElements.define('iw-button', IW_Button);
 
-export default Button;
+export default IW_Button;

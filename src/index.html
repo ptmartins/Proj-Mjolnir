@@ -11,16 +11,22 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div id="app" class="app">
-      <header class="header">
-        <h1 class="appTitle"> Project Mjolnir </h1>
-        <div class="actions">
-          <button class="btn btn--theme active" data-theme="light">Light</button>
-          <button class="btn btn--theme" data-theme="neutral">Neutral</button>
-          <button class="btn btn--theme" data-theme="dark">Dark</button>
-        </div>
-      </header>
+    <template id="header-template">
+      <h1 class="appTitle"> Project Mjolnir </h1>
+      <div class="actions">
+        <button class="btn btn--theme active" data-theme="light">Light</button>
+        <button class="btn btn--theme" data-theme="neutral">Neutral</button>
+        <button class="btn btn--theme" data-theme="dark">Dark</button>
+      </div>
+    </template>
+    <template id="footer-template">
+      <h1>Footer</h1>
+    </template>
+    <!-- HEADER -->
+    <header id="header" class="header"></header>
 
+    <!-- MAIN -->
+    <main id="app" class="app">
       <!-- Section - Button component -->
       <section class="section section--buttons">
         <h2 class="section__title"> Buttons </h2>
@@ -32,8 +38,19 @@
             <span class="material-symbols-outlined">settings</span>
             Icon button
           </iw-button>
+          <iw-button>
+            <span class="material-symbols-outlined"> search </span>
+          </iw-button>
         </div>
       </section>
+
+      <!-- Section - Avatar -->
+      <section class="section section--avatar">
+        <h2 class="section__title"> Avatar </h2>
+        <div class="section__components">
+          <iw-avatar label="PM"></iw-avatar>
+        </div>
+      </section>      
 
       <!-- Section - Date component -->
       <section class="section section--date">
@@ -65,8 +82,10 @@
           </iw-list-item>
         </div>
       </section>
-    </div>
+    </main>
 
+    <!-- FOOTER -->
+    <footer id="footer" class="footer"></footer>
     <!-- JS scripts -->
     <script src="iw-components/index.js" type="module"></script>
     <script src="./js/main.js"></script>

@@ -97,6 +97,8 @@
     --overlay: light-dark(var(--neutral-100), var(--neutral-700));
     --primary-accent: light-dark(var(--accent-500), var(--yellow-700));
     --primary-accent-contrast: light-dark(var(--white), var(--neutral-800));
+
+    --btn-radius: var(--radius-m); 
 }
 
 html[data-theme="light"],

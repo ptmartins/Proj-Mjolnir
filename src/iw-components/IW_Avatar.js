@@ -4,10 +4,14 @@ class Avatar extends BaseComponent {
 
     constructor() {
         super();
+        this.classes = [];
+        this.getClasses();
     }
 
-    observedAttributes() {
-        return ['type', 'label'];
+    getClasses() {
+        if(this.hasAttribute('type') && this.getAttribute('type') === 'round') {
+            this.classes.push('avatar--round')
+        }
     }
 
     render() {
@@ -18,7 +22,11 @@ class Avatar extends BaseComponent {
                 border-radius: var(--radius-m);
                 color: var(--primary-accent-contrast);
                 font-weight: 700;
-                padding: .375rem;
+                padding: .75rem;  
+            }
+
+            .avatar--round {
+                border-radius: 50%;
             }
         `);
 
@@ -26,7 +34,7 @@ class Avatar extends BaseComponent {
             let label = this.getAttribute('label');
 
             this.applyMarkup(`
-                <span class="avatar avatar--label">${label}</span>    
+                <span class="avatar ${this.classes}">${label}</span>    
             `)
         }
     }

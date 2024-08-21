@@ -3,7 +3,7 @@ function loadGoogleIcons() {
         const link = document.createElement('link');
         link.id = 'google-material-icons';
         link.rel = 'stylesheet';
-        link.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined';
+        link.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0';
         document.head.appendChild(link);
     }
 }
