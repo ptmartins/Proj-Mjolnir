@@ -34,7 +34,7 @@ class IW_Button extends BaseComponent {
       .btn {
         align-items: center;
         background-color: var(--neutral-200);
-        border: none;
+        border: var(--btn-border);
         border-radius: var(--btn-radius);
         cursor: pointer;
         display: flex;
@@ -64,6 +64,10 @@ class IW_Button extends BaseComponent {
                 background-color: var(--red-600);
             }
         }
+      }
+
+      ::slotted(i) {
+        font-size: 1.1rem !important;
       }
 
     `);

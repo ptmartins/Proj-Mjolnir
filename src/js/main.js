@@ -47,20 +47,11 @@
         DOM.themes.forEach(btn => btn.addEventListener('click', switchTheme));
     }
 
-    let loadTemplate = (templateId, elementId) => {
-        debugger;
-        const template = document.getElementById(templateId);
-        const content = template.content.cloneNode(true);
-        document.getElementById(elementId).appendChild(content);
-    }
-
     /**
      * Kick off logic
      */
     let init = () => {
         cacheDOM();
-        loadTemplate('header-template', 'header');
-        loadTemplate('footer-template', 'footer');
         DOM.dateEls.forEach(el => el.setAttribute('date', date));
         setupEvents();
     }

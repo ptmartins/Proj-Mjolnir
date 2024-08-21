@@ -1,6 +1,6 @@
 // .storybook/preview.js
-import '../src/css/globals.css'; 
-import '../src/css/styles.css'; 
+import '../src/styles/globals.css'; 
+import '../src/styles/styles.css'; 
 
 
 // export const parameters = {

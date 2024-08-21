@@ -2,8 +2,8 @@
   "name": "project_mjolnir",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html",
+    "start": "astro dev",
+    "build": "astro build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -17,11 +17,11 @@
     "@storybook/web-components-webpack5": "^8.2.9"
   },
   "dependencies": {
+    "@astrojs/db": "^0.13.2",
     "@storybook/addon-actions": "^8.2.9",
     "@storybook/addon-docs": "^8.2.9",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-links": "^8.2.9",
-    "parcel": "latest",
-    "parcel-bundler": "^1.12.5"
+    "astro": "^4.14.3"
   }
 }

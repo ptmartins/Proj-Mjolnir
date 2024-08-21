@@ -89,7 +89,6 @@
 
     --default-transition: all .2s ease-in;
 
-
     color-scheme: light dark;
 
     --bg: light-dark(var(--white), var(--neutral-800));
@@ -98,6 +97,9 @@
     --primary-accent: light-dark(var(--accent-500), var(--yellow-700));
     --primary-accent-contrast: light-dark(var(--white), var(--neutral-800));
 
+    --btn-bg: var(--primary-accent);
+    --btn-color: var(--primary-accent-contrast);
+    --btn-border: 0;
     --btn-radius: var(--radius-m); 
 }
 

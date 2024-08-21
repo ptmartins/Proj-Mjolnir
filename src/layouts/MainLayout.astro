@@ -1,0 +1,75 @@
+---
+import '../styles/globals.css'; 
+import '../styles/styles.css'; 
+--- 
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial
+  scale=1.0">
+    <title>Project Mjolnir</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <h1 class="appTitle"> 
+        <a href="/">Project Mjolnir </a>
+      </h1>
+      <div class="actions">
+        <button class="btn btn--theme active" data-theme="light">Light</button>
+        <button class="btn btn--theme" data-theme="neutral">Neutral</button>
+        <button class="btn btn--theme" data-theme="dark">Dark</button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="app" class="main">  
+      <slot />
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      Footer
+    </footer>
+    
+    <!-- JS scripts -->
+    <script>
+      if (typeof window !== 'undefined') {
+        import('../components/index.js'); // Dynamically import the Web Component script
+      }
+    </script>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
+
+<style>
+  .header,
+  .main,
+  .footer {
+      margin: 0 auto;
+      max-width: 1440px;
+      width: 85%;
+  }
+
+  .header,
+  .footer {
+      padding-block: 1.5rem;
+  }
+
+  .header {
+    align-items: center;
+    border-block-end: 1px solid var(--neutral-300);  
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  .main {
+      flex-grow: 1;
+      padding-block: 3rem;
+  }
+  .footer {
+    border-block-start: 1px solid var(--neutral-300);  
+  }
+</style>

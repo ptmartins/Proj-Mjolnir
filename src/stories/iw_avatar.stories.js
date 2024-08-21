@@ -1,4 +1,4 @@
-import '../iw-components';
+import '../components';
 
 export default {
     title: 'IW Design System/Elements/Avatar',

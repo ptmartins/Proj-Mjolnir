@@ -1,0 +1,32 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'; 
+---
+
+<MainLayout>
+  <div class="nav">
+    <a href="/avatars" class="nav__link">Avatars</a>
+    <a href="/buttons" class="nav__link">Buttons</a>
+    <a href="/contextMenu" class="nav__link">Context Menu</a>
+    <a href="/date" class="nav__link">Date</a>
+    <a href="/listItems" class="nav__link">List Items</a>
+  </div>
+</MainLayout>
+
+<style>
+  .nav {
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .nav__link {
+    border: 1px solid var(--neutral-300);
+    padding: .75rem;
+    text-align: center;
+    transition: all .2s ease-in;
+
+    &:hover {
+      background-color: var(--neutral-300);
+    }
+  }
+</style>
